@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Grid</title>
+    <style>
+        .one{grid-area: header}
+        .two{grid-area: left}
+        .three{grid-area: center}
+        .four{grid-area: right}
+        .five{grid-area: footer}
+
+        .gridcontainer{
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+            'left center center center right right'
+            'left footer footer footer footer footer';
+            gap: 10px;
+            padding: 20px;
+        
+        }
+
+        .gridcontainer > div{
+            background-color: yellow;
+            text-align: center;
+            font-size: 40px;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning Grid</h1>
+    <div class="gridcontainer">
+        <div class="one">Header</div>
+        <div class="two">Left</div>
+        <div class="three">Center</div>
+        <div class="four">Right</div>
+        <div class="five">Footer</div>
+    </div>
+</body>
+</html>
