@@ -67,7 +67,44 @@
             color: white;
             cursor: pointer;
         }
-        
+        .chat{
+          padding: 1em 0;
+          display: flex;
+          justify-content: space-between;
+        }
+        .chat .info{
+          display: flex;
+        }
+        .chat .username{
+          font-size: 1.2rem;
+          margin-bottom: 5px;
+
+        }
+        .chat .recent-chat{
+          color: grey;
+          max-width: 200px;
+
+        }
+        .chat .photo{
+          width: 55px;
+          height: 55px;
+          border-radius:50%;
+          margin-right: 18px;
+        }
+        .chat .recent-chat-tim{
+          font-size: 12px;
+          color: grey;
+        }
+        .contact-button{
+          padding: 1em;
+          border: 0;
+          border-radius: 50%;
+          transform: rotate(0deg);
+          position: fixed;
+          bottom: 20px;
+          background-color: var(---primaryColor);
+          color: white;
+        }
     </style>
   </head>
 
@@ -92,16 +129,16 @@
     <!-- Chat section starts here -->
     <!-- chat 1 -->
     <section>
-      <div>
-        <div>
-          <div>
-            <img src="" alt="" />
+      <div class="container">
+        <div class="chat">
+          <div class="info">
+            <img class="photo" src="" alt="" />
             <div>
-              <h6>Rishav</h6>
-              <p ><i class="bi bi-check2-all"></i> Yes, i remembered that! 😄</p>
+              <h6 class="username">Rishav</h6>
+              <p class="recent-chat"><i class="bi bi-check2-all"></i> Yes, i remembered that! 😄</p>
             </div>
           </div>
-          <small>
+          <small class="recent-chat-time">
             12:30 pm
           </small>
         </div>
