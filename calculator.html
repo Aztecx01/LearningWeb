@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <form name="calculator">
+        <!-- input box -->
+        Number1: <input type="text" name="num1">
+        Number2: <input type="text" name="num2">
+        Result: <input type="text" name="total">
+    </form>
+    <br>
+    <input type="button" value="+" onclick="addition();">
+    <input type="button" value="-" onclick="substraction();">
+    <input type="button" value="*" onclick="multiplication();">
+    <input type="button" value="/" onclick="division();">
+    <input type="button" value="^" onclick="power();">
+    <script type="text/javascript">
+        function addition(){
+            var a = Number(document.calculator.num1.value);
+            var b = Number(document.calculator.num2.value);
+            var sum = a+b
+            document.calculator.total.value=sum;
+        }
+        function substraction(){
+            var a = Number(document.calculator.num1.value);
+            var b = Number(document.calculator.num2.value);
+            var sum = a-b;
+            document.calculator.total.value=sum;
+        }
+        function multiplication(){
+            var a = Number(document.calculator.num1.value);
+            var b = Number(document.calculator.num2.value);
+            var sum = a*b;
+            document.calculator.total.value=sum;
+        }
+        function division(){
+            var a = Number(document.calculator.num1.value);
+            var b = Number(document.calculator.num2.value);
+            var sum = a/b;
+            document.calculator.total.value=sum;
+        }
+        function power(){
+            var a = Number(document.calculator.num1.value);
+            var b = Number(document.calculator.num2.value);
+            var sum = a**b;
+            document.calculator.total.value=sum;
+        }
+
+    </script>
+
+
+</body>
+</html>

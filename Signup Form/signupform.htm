@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Login Validation</h2>
+    <form>
+        Email: <input type="text" id="email" placeholder="Enter your email"><br><br>
+        Password: <input type="password" id="password" placeholder="Enter your password"><br><br>
+        <button type="button" id="btn">Login</button>
+        
+        <script>
+            var emailEntered = document.getElementById("email");
+            var passEntered = document.getElementById("password");
+            var button = document.getElementById("btn");
+
+            button.addEventListener("click",function(){
+                var email = emailEntered.value;
+                var pass = passEntered.value;
+
+                var correctEmail = "rishav@gmail.com";
+                var correctPass = "secret";
+
+                if (email===correctEmail && pass===correctPass){
+                    window.open("whatsapp_clone.html")
+                }
+                else if(email == "" && pass == ""){
+                    alert("Bina email aur password ke hi login?")
+
+                }
+                else if(email == ""){
+                    alert("Bete email toh daal")
+
+                }
+                else if(pass == ""){
+                    alert("password kon dalega?")
+
+                }
+                else{
+                    alert("Wrong password")
+                }
+            })
+
+
+        </script>
+    </form>
+</body>
+</html>
